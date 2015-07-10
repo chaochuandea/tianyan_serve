@@ -16,11 +16,6 @@ public class HelloController implements SparkApplication{
 			public Object handle(Request request, Response response) throws Exception {
 				return "hello world";
 			}
-		}, new ResponseTransformer() {
-			@Override
-			public String render(Object model) throws Exception {
-				return null;
-			}
 		});
 	}
 }
